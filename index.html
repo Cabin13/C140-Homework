@@ -1,0 +1,47 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+        <script src="main.js"></script>
+    </head>
+
+    <body id="body">
+        <center>
+            <div id="heading">
+                <h1 class="text">Ping Pong</h1>
+                <button class="text button body" id="instructions" data-toggle="modal" data-target="#popup">View Instructions</button>
+            </div>
+            <br>
+            <button class="text button" onclick="startGame()">Start Game</button>
+            <label class="text" id="status"></label>
+            <div id="canvas"></div>
+            <br>
+            <button class="text button" id="restart" onclick="restart()">Restart</button>
+            <p class="text" id="footer">AI Ping Pong // Adapted by Anya Ray</p>
+
+            <div class="modal fade" id="popup">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button class="close text button" id="close" data-dismiss="modal">&times;</button>
+                    <h3 class="text">Instructions</h3>
+                  </div>
+                  <div class="modal-body text">
+                    <p>Move your cursor to move the paddle. The speed will increase the more you hit the ball. You will have three lives. The aim of the game is to get the highest score while using the least amount of lives.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </center>
+    </body>
+</html>

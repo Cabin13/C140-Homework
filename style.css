@@ -1,0 +1,26 @@
+#body {
+    background-color: #d0bce4;
+    background-size: cover;
+}
+
+.text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.button {
+    background-color: #ba9fd6;
+    border-width: 1px;
+}
+
+canvas {
+    border: #d0bce4;
+    box-shadow: 10px 10px 10px #ba9fd6;
+    border-radius: 20px;
+}
